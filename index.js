@@ -3,7 +3,14 @@ const cors = require('cors');
 const app = express();
 const PORT = 8000;
 
-app.use(cors()); // Enable CORS
+// app.use(cors()); // Enable CORS
+
+const corsOptions = {
+    origin: 'https://abkr020.github.io',
+    optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to the API!');
