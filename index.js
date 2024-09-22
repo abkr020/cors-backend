@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.get('/api/request', (req, res) => {
     const data = {
         message: 'no',
-        // timestamp: new Date(),
+        timestamp: new Date(),
         additionalData: ["ak"]
         // message: 'Request received successfully!',
         // timestamp: new Date(),
